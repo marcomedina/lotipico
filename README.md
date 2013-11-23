@@ -1,15 +1,15 @@
 lotipi.co
 ========
 
-You will need rmagick
+You will need imagemagick
 
 ```shell
-brew install rmagick #OSX Users
+brew install imagemagick #OSX Users
 ```
 
 ```shell
 bundle
-bundle exec rake db:crate
+bundle exec rake db:create
 bundle exec rake railties:install:migrations
 bundle exec rake db:migrate
 bundle exec rake db:seed
