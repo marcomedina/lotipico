@@ -1,15 +1,17 @@
 development:
   adapter: postgresql
-  encoding: utf8
-  reconnect: false
-  database: lotipico_dev
+  encoding: unicode
+  database: sample_development
+  username: postgres
+  password:
   host: localhost
-  pool: 5
+  port: 5432
 
 test:
   adapter: postgresql
-  encoding: utf8
-  reconnect: false
-  database: lotipico_test
+  encoding: unicode
+  database: sample_development
+  username: postgres
+  password:
   host: localhost
-  pool: 5
+  port: 5432
