@@ -32,9 +32,10 @@
         <h1 class="product-title" itemprop="name"><%= accurate_title %></h1>
 
         <div itemprop="description" data-hook="description">
-          <p><strong>60</strong> (Buyers) /<strong>100</strong> (Goal)</p>
+          <% counter = stock_counter @product %>
+          <p>Available <%= counter[:on_hand] %> of <%= counter[:original] %></p>
           <div class="progress">
-            <div class="bar" style="width: 60%;"></div>
+            <div class="bar" style="width: <%= counter[:percentaje] %>%;"></div>
           </div>
           <%= product_description(@product) rescue Spree.t(:product_has_no_description) %>
         </div>
