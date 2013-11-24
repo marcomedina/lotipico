@@ -43,4 +43,3 @@ var
 TAGS
 nbproject
 vendor/extensions/theme_default/app/stylesheets/*.css
-*secret_token.rb
