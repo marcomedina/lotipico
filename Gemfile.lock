@@ -15,6 +15,14 @@ GIT
       typhoeus
 
 GIT
+  remote: git://github.com/hbirch/spree_product_zoom.git
+  revision: 943730b97e1292e66d4a32385d704eb32c20270c
+  branch: 2-1-stable
+  specs:
+    spree_product_zoom (1.3)
+      spree_core (~> 2.1.0.beta)
+
+GIT
   remote: git://github.com/radar/better_spree_paypal_express.git
   revision: f40a4a32a66e094afb26a7800da3f6bbc8e0e3c7
   branch: 2-1-stable
@@ -373,5 +381,6 @@ DEPENDENCIES
   spree_gateway!
   spree_i18n!
   spree_paypal_express!
+  spree_product_zoom!
   turbolinks
   uglifier (>= 1.3.0)
