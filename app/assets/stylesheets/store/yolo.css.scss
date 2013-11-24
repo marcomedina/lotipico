@@ -123,3 +123,33 @@ nav#taxonomies{
 .fix_clear{
   clear: both;
 }
+#product-description{
+  .price{
+    font-size: 20px;
+    color: #E95D32;
+    margin: 5px 0;
+  }
+  .product-title{
+    color: #666666;
+    border: none !important;
+    margin: 0;
+  }
+}
+div[data-hook="product_right_part"]{
+  padding: 0 10px 0 20px;
+}
+#add-to-cart-button{
+  background-color: #E95D32;
+  padding: 10px 30px;
+  border: none;
+  font-size: 25px;
+  font-family: Museo-700;
+}
+#inside-product-cart-form{
+}
+#product_cart_form{
+  width: 100%;
+}
+#quantity-to-cart{
+  text-align: right;
+}
