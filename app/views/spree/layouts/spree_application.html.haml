@@ -1,0 +1,23 @@
+!!!
+/[if lt IE 7 ] <html class="ie ie6" lang="<haml_loud> I18n.locale </haml_loud>">
+/[if IE 7 ] <html class="ie ie7" lang="<haml_loud> I18n.locale </haml_loud>">
+/[if IE 8 ] <html class="ie ie8" lang="<haml_loud> I18n.locale </haml_loud>">
+/[if IE 9 ] <html class="ie ie9" lang="<haml_loud> I18n.locale </haml_loud>">
+/ [if gt IE 9]><!
+%html{lang: I18n.locale}
+  / <![endif]
+  %head{"data-hook" => "inside_head"}= render :partial => 'spree/shared/head'
+  %body{class: body_class, "data-hook" => "body", id: @body_id || 'default'}
+    .container.row
+      = render :partial => 'spree/shared/header'
+      #wrapper.row-fluid{"data-hook" => ""}
+        = breadcrumbs(@taxon)
+        .row-fluid
+          = render :partial => 'spree/shared/sidebar' if content_for? :sidebar
+          #content{class: "span#{!content_for?(:sidebar) ? "12" : "10"}", "data-hook" => ""}
+            = flash_messages
+            = yield
+      = render :partial => 'spree/shared/footer'
+    = render :partial => 'spree/shared/google_analytics'
+    :javascript
+      Spree.api_key = #{raw(try_spree_current_user.try(:spree_api_key).to_s.inspect)};
