@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/crowdint/spree_conekta.git
-  revision: 4c0b5a8af4199c326eabd120129a689e111149a9
+  revision: be71286274cc9f2ed4cfd288f578b63b0e3edd61
   branch: rails-4
   specs:
     spree_conekta (0.0.1)
@@ -172,7 +172,7 @@ GEM
       multipart-post (~> 1.2.0)
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
-    ffaker (1.21.0)
+    ffaker (1.22.0)
     ffi (1.9.3)
     font-awesome-rails (4.0.3.0)
       railties (>= 3.2, < 5.0)
