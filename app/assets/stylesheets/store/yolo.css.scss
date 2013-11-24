@@ -1,0 +1,92 @@
+input[type="number"]{
+  height: 40px !important;
+}
+
+#header{
+  background-color: rgba(0,0,0,0.6);
+  height: 70px;
+  z-index: 100;
+  position: relative;
+  top: -430px;
+}
+#logo{
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+}
+#top-nav-bar{
+  float: right;
+  margin-top: 30px !important;
+}
+#nav-bar li a{
+  color: white;
+}
+#header-baner{
+  background-image: asset-data-url('store/banner_Banner.png');
+  height: 430px;
+  width: 100%;
+  z-index: 0;
+}
+#main-menu-wrapper{
+  margin-top: -100px;
+  ul{
+    border: 0;
+  }
+}
+#wrapper{
+  top: -50px;
+  position: relative;
+}
+ul#products li .product-image{
+  border: none;
+}
+nav#top-nav-bar ul li a{
+  font-weight: normal;
+}
+ul#products li{
+  text-align: left;
+  min-height: 200px;
+  a.info{
+    color: #666666;
+    font-size: 16px;
+    border: none;
+    height: auto;
+    font-weight: normal;
+  }
+  .price{
+    color: #E95D32;
+  }
+}
+body{
+  font-family: 'Museo-700' !important;
+}
+nav#taxonomies{
+  .taxonomy-root{
+    text-transform: none;
+    border: none;
+    font-size: 16px;
+  }
+  .taxons-list{
+    list-style: none;
+    margin: 10px 0 15px 0;
+    li{
+      border-radius: 3px;
+      background-color: #E95D32;
+      padding: 8px 10px;
+      margin: 5px 0;
+      a{
+        font-weight: normal;
+        font-size: 16px;
+        color: white;
+      }
+    }
+  }
+}
+.pagination{
+  .page{
+    color: #666666;
+    a{
+      color: #E95D32;
+    }
+  }
+}
