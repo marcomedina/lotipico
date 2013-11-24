@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/crowdint/spree_conekta.git
-  revision: 255495c579998dd5e8963c208ebb47e14cc1f4cb
+  revision: f81508683031400eae157c6eab34fceba456beee
   branch: rails-4
   specs:
     spree_conekta (0.0.1)
