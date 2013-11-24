@@ -40,3 +40,5 @@
           = render :partial => 'cart_form'
 
       = render :partial => 'taxons'
+-if @product.vendor
+  = render :partial => 'spree/shared/vendor_info'
