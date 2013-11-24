@@ -1,0 +1,14 @@
+#vendor-info
+  #vendor-details.row
+    #vendor-name.span10.offset1
+      =@product.vendor.name
+      %p#vendor-story
+        =@product.vendor.story
+
+  #vendor-generic.row
+    #vendor-images.span5.offset1
+      -unless @product.vendor.vendor_images.empty?
+        %img{img: "Vendor #{@product.vendor.name} photo", src: @product.vendor.vendor_images.first.url}
+
+    #vendor-location.span5
+      %img{img: "Vendor #{@product.vendor.name} location", src: "http://maps.google.com/maps/api/staticmap?center=#{@product.vendor.location}&zoom=12&size=470x300&maptype=roadmap&sensor=false"}
