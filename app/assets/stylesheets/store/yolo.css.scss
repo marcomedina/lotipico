@@ -83,10 +83,17 @@ nav#taxonomies{
   }
 }
 .pagination{
+  span{
+    margin: 0 5px;
+  }
   .page{
     color: #666666;
     a{
       color: #E95D32;
     }
+  }
+  .next, .last{
+    color: #E95D32;
+    border: 1px solid #E95D32;
   }
 }
