@@ -16,6 +16,10 @@ Spree.config do |config|
   config.s3_secret = ENV['S3_SECRET']
 end
 
+Paperclip.interpolates(:s3_eu_url) do |attachment, style|
+“#{attachment.s3_protocol}://#{Spree::Config[:s3_host_alias]}/#{attachment.bucket_name}/#{attachment.path(style).gsub(%r{^/}, “”)}”
+end
+
 Spree.user_class = "Spree::User"
 SpreeI18n::Config.available_locales = [:en, :'es-MX'] # displayed on translation forms
 SpreeI18n::Config.supported_locales = [:en] # displayed on frontend select box
