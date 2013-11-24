@@ -48,3 +48,8 @@ gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :bran
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-1-stable'
 gem 'spree_i18n', github: 'spree/spree_i18n', :branch => '2-1-stable'
 gem 'spree_bootstrap', github: 'samtreweek/spree_bootstrap'
+gem 'spree_conekta', git: 'git://github.com/crowdint/spree_conekta.git', branch: 'rails-4'
+gem 'spree_paypal_express', :github => "radar/better_spree_paypal_express", :branch => "2-1-stable"
+gem "spree_product_zoom", :github => "hbirch/spree_product_zoom", :branch => '2-1-stable'
+gem "spree_social_products", :github => "spree/spree_social_products", :branch => '2-1-stable'
+

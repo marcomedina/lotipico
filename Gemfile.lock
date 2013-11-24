@@ -1,4 +1,37 @@
 GIT
+  remote: git://github.com/crowdint/spree_conekta.git
+  revision: f81508683031400eae157c6eab34fceba456beee
+  branch: rails-4
+  specs:
+    spree_conekta (0.0.1)
+      activemerchant
+      faraday
+      faraday_middleware
+      oj
+      spree_api (~> 2.0)
+      spree_backend (~> 2.0)
+      spree_core (~> 2.0)
+      spree_frontend (~> 2.0)
+      typhoeus
+
+GIT
+  remote: git://github.com/hbirch/spree_product_zoom.git
+  revision: 943730b97e1292e66d4a32385d704eb32c20270c
+  branch: 2-1-stable
+  specs:
+    spree_product_zoom (1.3)
+      spree_core (~> 2.1.0.beta)
+
+GIT
+  remote: git://github.com/radar/better_spree_paypal_express.git
+  revision: f40a4a32a66e094afb26a7800da3f6bbc8e0e3c7
+  branch: 2-1-stable
+  specs:
+    spree_paypal_express (2.0.3)
+      paypal-sdk-merchant (= 1.106.1)
+      spree_core (~> 2.1.1)
+
+GIT
   remote: git://github.com/samtreweek/spree_bootstrap.git
   revision: b81ac04e474de40b543fe8354a9403ef915ec2ed
   specs:
@@ -17,6 +50,14 @@ GIT
     spree_i18n (3.0.0)
       globalize (~> 4.0.0.alpha.1)
       rails-i18n (~> 0.7.3)
+      spree_core (~> 2.1.0)
+
+GIT
+  remote: git://github.com/spree/spree_social_products.git
+  revision: d40e4c9a7a36eed14b3afdf025ccd7675918d9be
+  branch: 2-1-stable
+  specs:
+    spree_social_products (2.0)
       spree_core (~> 2.1.0)
 
 GIT
@@ -123,8 +164,16 @@ GEM
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
     erubis (2.7.0)
+    ethon (0.6.1)
+      ffi (>= 1.3.0)
+      mime-types (~> 1.18)
     execjs (2.0.2)
+    faraday (0.8.8)
+      multipart-post (~> 1.2.0)
+    faraday_middleware (0.9.0)
+      faraday (>= 0.7.4, < 0.9)
     ffaker (1.21.0)
+    ffi (1.9.3)
     font-awesome-rails (4.0.3.0)
       railties (>= 3.2, < 5.0)
     globalize (4.0.0.alpha.2)
@@ -163,9 +212,11 @@ GEM
       i18n (~> 0.6.0)
     multi_json (1.8.2)
     multi_xml (0.5.5)
+    multipart-post (1.2.0)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     nori (1.1.5)
+    oj (2.2.3)
     orm_adapter (0.5.0)
     paper_trail (3.0.0.rc2)
       activerecord (>= 3.0, < 5.0)
@@ -178,6 +229,11 @@ GEM
       mime-types
     paranoia (2.0.1)
       activerecord (~> 4.0)
+    paypal-sdk-core (0.2.6)
+      multi_json (~> 1.0)
+      xml-simple
+    paypal-sdk-merchant (1.106.1)
+      paypal-sdk-core (~> 0.2.3)
     pg (0.17.0)
     polyamorous (0.6.4)
       activerecord (>= 3.0)
@@ -296,6 +352,8 @@ GEM
     truncate_html (0.9.2)
     turbolinks (1.3.1)
       coffee-rails
+    typhoeus (0.6.6)
+      ethon (~> 0.6.1)
     tzinfo (0.3.38)
     uglifier (2.3.1)
       execjs (>= 0.3.0)
@@ -311,6 +369,7 @@ GEM
     wasabi (2.5.1)
       httpi (~> 1.0)
       nokogiri (>= 1.4.0)
+    xml-simple (1.1.2)
 
 PLATFORMS
   ruby
@@ -326,7 +385,11 @@ DEPENDENCIES
   spree (= 2.1.3)
   spree_auth_devise!
   spree_bootstrap!
+  spree_conekta!
   spree_gateway!
   spree_i18n!
+  spree_paypal_express!
+  spree_product_zoom!
+  spree_social_products!
   turbolinks
   uglifier (>= 1.3.0)

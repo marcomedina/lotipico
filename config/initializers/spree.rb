@@ -10,6 +10,14 @@ Spree.config do |config|
   # Uncomment to override the default site name.
   config.site_name = "lotipi.co"
   config.logo = "store/logo.png"
+  config.use_s3 = true
+  config.s3_bucket = 'lotipico'
+  config.s3_access_key = ENV['S3_ACCESS_KEY']
+  config.s3_secret = ENV['S3_SECRET']
+end
+
+Paperclip.interpolates(:s3_eu_url) do |attachment, style|
+“#{attachment.s3_protocol}://#{Spree::Config[:s3_host_alias]}/#{attachment.bucket_name}/#{attachment.path(style).gsub(%r{^/}, “”)}”
 end
 
 Spree.user_class = "Spree::User"
