@@ -13,3 +13,4 @@
 //= require store/spree_i18n
 //= require store/spree_bootstrap
 //= require store/spree_product_zoom
+//= require store/spree_social_products
