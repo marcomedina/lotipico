@@ -11,16 +11,18 @@
 
           = product_description(@product) rescue Spree.t(:product_has_no_description)
 
-  .span6{'data-hook' => 'product_left_part'}
-    .row{'data-hook' => 'product_left_part_wrap'}
+      #available
+        Available #{counter[:on_hand]} of #{counter[:original]}
+      .progress
+        .bar{style: "width: #{counter[:percentaje]}%;"}
 
       #cart-form{'data-hook' => 'cart_form'}
         = render :partial => 'cart_form'
 
-      %p
-        Available #{counter[:on_hand]} of #{counter[:original]}
-      .progress
-        .bar{style: "width: #{counter[:percentaje]}%;"}
+
+  .span6{'data-hook' => 'product_left_part'}
+    .row{'data-hook' => 'product_left_part_wrap'}
+
 
       #product-images{'data-hook' => 'product_images'}
         #main-image{'data-hook' => ''}
